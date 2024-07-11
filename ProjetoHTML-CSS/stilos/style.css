@@ -1,6 +1,60 @@
 @charset "UTF-8";
 
-body {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+@font-face {
+    font-family: 'Batman';
+    src: url(/ProjetoHTML-CSS/imagens/imagens/batmfa__.ttf) format('opentype');
+    font-weight: normal;
 }
+
+/*
+#304EF2 -AZUL
+#061440 -ROXO
+#142B73 -AZUL ESCURO PEROLADO
+#3574F2 -AZUL CLARO
+#032026 -PRETO
+*/
+
+:root{
+    --corprimaria: #f2b33d;
+    --cortitulos: #44238c;
+    --corfonte: #392259;
+    --corsecundaria: #D91480;
+    --cordestaque: #ffff;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-titulos: 'Batman', 'cursive';
+
+}
+
+body{
+    background-color: var(--corprimaria);
+    color: var(--corfonte);
+}
+
+header > h1 {
+    color: var(--cortitulos);
+    font-family: var(--fonte-titulos);
+    background-color: #D91480;
+}
+
+nav > a{
+    color: var(--corsecundaria);
+    
+}
+
+article > h1{
+    color: var(--corfonte);
+    font-family: var(--fonte-titulos);
+}
+
+h2{
+    font-family: var(--fonte-titulos);
+}
+
+footer{
+    font-family: var(--fonte-padrao);
+    
+}
+
+
+
